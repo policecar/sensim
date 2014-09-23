@@ -1,0 +1,15 @@
+
+mapred.job.queue.name=processing
+mapred.reduce.slowstart.completed.maps=0.9
+
+mapreduce.map.speculative=true
+mapreduce.reduce.speculative=true
+
+# pig.additional.jars=
+# pig.import.search.path=
+
+# mapred.child.env=LD_LIBRARY_PATH=...
+
+mapred.child.java.opts=-Xmx4G
+pig.tmpfilecompression=true
+pig.tmpfilecompression.codec=gz
