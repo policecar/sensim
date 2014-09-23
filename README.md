@@ -16,12 +16,11 @@ Learning semantic relations with distributional similarity.
 
 * Classification with logistic regression as implemented in [scikit-learn](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html); see [simsets](https://github.com/policecar/simsets) for details.
 
-* Clustering with [Chinese Whispers](http://wortschatz.informatik.uni-leipzig.de/~cbiemann/software/CW.html). Extrinsic cluster evaluation with the B-Cubed measure[2], see the [python module](https://github.com/policecar/sensim/tree/master/src/main/python) and in particular [clustering_utils](https://github.com/policecar/sensim/blob/master/src/main/python/clustering_utils.py), [evaluate_cw_clustering](https://github.com/policecar/sensim/blob/master/src/main/python/evaluate_cw_clustering.py).
+* Clustering with [Chinese Whispers](http://wortschatz.informatik.uni-leipzig.de/~cbiemann/software/CW.html). Extrinsic cluster evaluation with various measures, see  [clustering_utils](https://github.com/policecar/sensim/blob/master/src/main/python/clustering_utils.py) and [evaluate_cw_clustering](https://github.com/policecar/sensim/blob/master/src/main/python/evaluate_cw_clustering.py).
 
-* Preliminary data analysis: [Root](http://root.cern.ch/) code to compute a variety of histograms and distance measures on the 
-  feature vectors for preliminary evaluation of potentially useful clustering approaches 
-  – [link](https://github.com/policecar/sensim/tree/master/src/main/root) to module. (Thanks to [jkerdels](https://github.com/jkerdels) for the introduction and most of the code!)
+* Some [Root code](https://github.com/policecar/sensim/blob/master/src/main/root/makeHistFromAscii.C) to plot histograms of many samples and/or dimensions.
 
+* Evaluation for both classification and clustering is done using the [BLESS data set](https://sites.google.com/site/geometricalmodels/shared-evaluation/).
 
 #### Run it on a hadoop cluster in mapreduce mode
 
@@ -47,5 +46,5 @@ the method testCoreNLPAnnotator() in CoreNLPAnnotatorTest.java.
 #### References
 
 [1] http://wortschatz.uni-leipzig.de/~sbordag/papers/BordagMC08.pdf  
-[2] http://pdf.aminer.org/000/019/970/entity_based_cross_document_coreferencing_using_the_vector_space_model.pdf
+[2] http://root.cern.ch
 
